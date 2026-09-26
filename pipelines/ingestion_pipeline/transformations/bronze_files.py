@@ -13,7 +13,7 @@ CATEGORIES_SCHEMA = StructType(
     [
         StructField("category_id", StringType()),
         StructField("category_name", StringType()),
-        StructField("parent_category_id", IntegerType()),
+        StructField("parent_category_id", StringType()),
         StructField("is_active", BooleanType())
     ]
 )
@@ -24,7 +24,7 @@ PRODUCTS_SCHEMA = StructType(
         StructField("sku", StringType()),
         StructField("product_name", StringType()),
         StructField("brand", StringType()),
-        StructField("category_id", DoubleType()), 
+        StructField("category_id", StringType()), 
         StructField("gender_target", StringType()),
         StructField("size_uk", DoubleType()),
         StructField("colour", StringType()),
